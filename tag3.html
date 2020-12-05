@@ -38,50 +38,98 @@
 }
 
 html{
-    font-size: 10px;
+    font-size: 20px;
     font-family: 'NanumBarunGothic', sans-serif;
 }
 
 body{
     max-width: 1000px;
     margin:auto;
+    padding:0.5rem;
+    background-color: #f5f5f5;
 }
 
-div.title{
-    font-size: 5rem;
+div.btitle{
+    font-size: 2rem;
     text-align:center;
-    padding: 2rem 0;
+    padding-top: 0.3rem 0;
 }
 
 div.description{
-    font-size: 2rem;
+    font-size: 1rem;
     text-align:center;
-    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 div.tags{
-    font-size: 2rem;
+    font-size: 1rem;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 div.tags a{
     border: 1px solid #aaa;
-    padding: 0.5rem;
+    padding: 0.2rem;
+}
+
+p.filter{
+    font-size: 1rem;
 }
 
 div.list{
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
+div.list a{
+    border-top: 1px solid #ccc;
+    display:block;
+    padding: 0.1rem;
+}
+
+div.list span.title{
+    float:left;   
+}
+
+div.list span.date{
+    float:right;
+}
+
+div.single{
+    background-color: white;
+}
+
+div.single div.title{
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align:center;
+    padding-top: 3rem;
+}
+
+div.single div.tag{
+    text-align: right;
+    margin: 1rem 0;
+}
+
+div.single div.tag a{
+    color: #777;
+}
 a.nodeco{
     text-decoration: none;
     color:rgb(0, 0, 0);
 }
 
+.footer{
+    margin-top:10rem;
+    font-size: 0.8rem;
+    text-align:center;
+}
 </style>
     <title>wirekang 블로그</title>
 </head>
 <body>
-    <div class="title">
+    <div class="btitle">
         <a class="nodeco" href="/">wirekang 블로그</a>
     </div>
 
@@ -100,19 +148,43 @@ a.nodeco{
             
                 <a class = "nodeco" href="tag2.html">
                     <span class="name">
-                        태그1</span>
+                        굉장히</span>
                     <span class="count">(1)</span>
                 </a>
             
                 <a class = "nodeco" href="tag3.html">
                     <span class="name">
-                        태그 2</span>
+                        많은</span>
                     <span class="count">(1)</span>
                 </a>
             
                 <a class = "nodeco" href="tag4.html">
                     <span class="name">
+                        태그</span>
+                    <span class="count">(1)</span>
+                </a>
+            
+                <a class = "nodeco" href="tag5.html">
+                    <span class="name">
+                        태그1</span>
+                    <span class="count">(1)</span>
+                </a>
+            
+                <a class = "nodeco" href="tag6.html">
+                    <span class="name">
+                        태그 2</span>
+                    <span class="count">(1)</span>
+                </a>
+            
+                <a class = "nodeco" href="tag7.html">
+                    <span class="name">
                         이 것은 태그</span>
+                    <span class="count">(1)</span>
+                </a>
+            
+                <a class = "nodeco" href="tag8.html">
+                    <span class="name">
+                        Very Long Tag!!!!!</span>
                     <span class="count">(1)</span>
                 </a>
             
@@ -121,17 +193,24 @@ a.nodeco{
 
     
 
-    <h3>Tag Filter: </h3>
-    
-        <h4><a href="tag3.html">태그 2</a></h4>
-    
+    <p class="filter">{ 많은 } 태그가 들어간 글</p>
 
 
 <div class ="list">
     
-        <a class="nodeco" href="test.html">테스트 (2020-12-5)</a><br/>
+        <a class="nodeco" href="array-pointer-malloc.html">
+            <span class="title">
+                배열 포인터 동적할당 메모리
+            </span>
+            <span class="date">
+                2020-12-5
+            </span>
+        </a></br>
     
 </div>
 
+    <div class="footer">
+        <a href="https://github.com/wirekang/blogen">Powered by blogen</p>
+    </div>
 </body>
 </html>
