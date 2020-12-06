@@ -54,7 +54,7 @@ body{
     max-width: 900px;
     padding:0.5rem;
     margin: auto 0;
-    background-color: #f5f5f5;
+    background-color: #f7f7f5;
 }
 
 #container{
@@ -93,24 +93,22 @@ div.tags a{
 }
 
 p.filter{
-    font-size: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
-div.list{
-    font-size: 1rem;
-}
-
-div.list a{
+a.post{
     border-top: 1px solid #ccc;
     display:block;
     padding: 0.1rem;
+    font-size: 1.1rem;
 }
 
-div.list span.title{
+a.post span.title{
     float:left;   
 }
 
-div.list span.date{
+a.post span.date{
     float:right;
 }
 
@@ -136,15 +134,6 @@ div.single div.tag a{
 a.nodeco{
     text-decoration: none;
     color:rgb(0, 0, 0);
-}
-
-div.related {
-    font-size: 1.2rem;
-    
-}
-
-div.related p{
-    text-align: center;
 }
 
 .footer{
@@ -179,11 +168,11 @@ div.related p{
         
             <a class="nodeco" href ="tag1.html">#프로그래밍</a>
         
-            <a class="nodeco" href ="tag5.html">#태그2</a>
+            <a class="nodeco" href ="tag8.html">#태그2</a>
         
-            <a class="nodeco" href ="tag6.html">#코드 하이라이팅</a>
+            <a class="nodeco" href ="tag9.html">#코드 하이라이팅</a>
         
-            <a class="nodeco" href ="tag7.html">#js</a>
+            <a class="nodeco" href ="tag10.html">#js</a>
         
     </div>
 
@@ -214,13 +203,30 @@ div.related p{
 }
 </code></pre>
 
+<h1>Bash</h1>
+
+<pre><code class="language-bash">sudo rm -rf /
+</code></pre>
+
 </div>
 <div class="related">
-    <p>관련된 글</p>
+    <p class="filter">관련된 글</p>
     
-        <a href="test2.html">두 번째 테스트용 글입니다.</a> </br>
+        
+    <a class="nodeco post" href="test2.html">
+        <span class="title">두 번째 테스트용 글입니다.</span>
+        <span class="date">2020-12-6</span>
+    </a>
+    </br>
+
     
-        <a href="array-pointer-malloc.html">배열 포인터 동적할당 메모리</a> </br>
+        
+    <a class="nodeco post" href="array-pointer-malloc.html">
+        <span class="title">배열 포인터 동적할당 메모리</span>
+        <span class="date">2020-12-5</span>
+    </a>
+    </br>
+
     
 </div>
 
@@ -230,3 +236,4 @@ div.related p{
 </div>
 </body>
 </html>
+
