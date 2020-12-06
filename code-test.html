@@ -150,6 +150,10 @@ a.toc-h2::before{
     content: "● "
 }
 
+code {
+    font-family: 'D2Coding';
+}
+
 a.nodeco{
     text-decoration: none;
     color:rgb(0, 0, 0);
@@ -187,6 +191,8 @@ a.gray{
     
 
     
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/a11y-dark.min.css" integrity="sha512-1rzCaYWsg3l6uKvGbUT6rAZFOcVn0zeXAFlZudsnj8k2xcrU5asL8jfJUEijV9GPYMh0GnPToeCTJj6RXQnA8g==" crossorigin="anonymous" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
 <script>
     function doTOC(){
         const post = document.getElementById("post")
@@ -208,6 +214,7 @@ a.gray{
         toc.innerHTML = tocInner
     }
     
+    hljs.initHighlightingOnLoad();
     document.addEventListener("DOMContentLoaded",doTOC)
 </script>
 <div class="single">
