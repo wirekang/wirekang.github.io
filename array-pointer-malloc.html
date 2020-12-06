@@ -114,6 +114,7 @@ a.post span.date{
 
 div.single{
     background-color: white;
+    padding: 1rem;
 }
 
 div.single div.title{
@@ -125,15 +126,41 @@ div.single div.title{
 
 div.single div.tag{
     text-align: right;
-    margin: 1rem 0;
+}
+a.toc{
+    font-size:1.2rem;
+    line-height: 1.4rem;
 }
 
-div.single div.tag a{
-    color: #777;
+a.toc-h1{
+    margin-left: 0rem;
 }
+
+a.toc-h2{
+    margin-left: 2rem;
+}
+
+a.toc-h1::before{
+    font-size: 0.6rem;
+    content: "■ "
+}
+
+a.toc-h2::before{
+    font-size: 0.6rem;
+    content: "● "
+}
+
 a.nodeco{
     text-decoration: none;
     color:rgb(0, 0, 0);
+}
+
+a.nodeco:hover{
+    color:#11a;
+}
+
+a.gray{
+    color: #777;
 }
 
 .footer{
@@ -160,29 +187,54 @@ a.nodeco{
     
 
     
+<script>
+    function doTOC(){
+        const post = document.getElementById("post")
+        const toc=document.getElementById("toc")
+        const headings = Array.from(post.getElementsByTagName("*")).filter( 
+            e=> (e.tagName=="H1" || e.tagName=="H2")
+        )
+        
+        let tocInner="<h1 class='toc'>목차</h1>"
+        let index = 0
+        headings.forEach(h => {
+            h.id=index++
+            tocInner+=`<a class="nodeco toc toc-${h.tagName.toLowerCase()}" href="#${h.id}">${h.innerHTML}</a></br>`
+            h.innerHTML=`<a class="nodeco" href="#toc">${h.innerHTML}</a>`
+            
+        })
+        console.log(headings)
+        console.log(tocInner)
+        toc.innerHTML = tocInner
+    }
+    
+    document.addEventListener("DOMContentLoaded",doTOC)
+</script>
 <div class="single">
     <div class="title">
         <a class="nodeco" href="array-pointer-malloc.html">배열 포인터 동적할당 메모리</a>
     </div>
     <div class="tag">
         
-            <a class="nodeco" href ="tag1.html">#프로그래밍</a>
+            <a class="nodeco gray" href ="tag1.html">#프로그래밍</a>
         
-            <a class="nodeco" href ="tag2.html">#굉장히</a>
+            <a class="nodeco gray" href ="tag2.html">#굉장히</a>
         
-            <a class="nodeco" href ="tag3.html">#아주</a>
+            <a class="nodeco gray" href ="tag3.html">#아주</a>
         
-            <a class="nodeco" href ="tag4.html">#크게</a>
+            <a class="nodeco gray" href ="tag4.html">#크게</a>
         
-            <a class="nodeco" href ="tag5.html">#다양한</a>
+            <a class="nodeco gray" href ="tag5.html">#다양한</a>
         
-            <a class="nodeco" href ="tag6.html">#많은</a>
+            <a class="nodeco gray" href ="tag6.html">#많은</a>
         
-            <a class="nodeco" href ="tag7.html">#태그</a>
+            <a class="nodeco gray" href ="tag7.html">#태그</a>
         
     </div>
-
-    <h1>들어가기 앞서</h1>
+    <div id="post">
+        <div id="toc"></div>
+        <hr>
+        <h1>들어가기 앞서</h1>
 
 <p>이 글은 배열, 포인터, 동적 할당 등 메모리를 다룰 때 필요한, 근본적인 이해를 돕기 위해 작성되었습니다. 포인터가 무엇인지 전혀 모르는 독자에게 이 글은 불친절하게 느껴질 수 있습니다. 이 글의 목적은 애매하게 알고 있는 지식들을 근본적으로 이해할 수 있게 하는 것 입니다.
  앞으로 메모리의 구조를 쉽게 파악할 수 있는 표를 사용할 것 입니다.</p>
@@ -328,6 +380,7 @@ a.nodeco{
 
 <h1>2차원 배열 동적할당</h1>
 
+    </div>
 </div>
 <div class="related">
     <p class="filter">관련된 글</p>
@@ -335,6 +388,14 @@ a.nodeco{
         
     <a class="nodeco post" href="code-test.html">
         <span class="title">코드 하이라이팅 테스트용 글</span>
+        <span class="date">2020-12-7</span>
+    </a>
+    </br>
+
+    
+        
+    <a class="nodeco post" href="heading-test.html">
+        <span class="title">목차 테스트용 글입니다.</span>
         <span class="date">2020-12-7</span>
     </a>
     </br>

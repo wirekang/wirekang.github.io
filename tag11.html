@@ -114,6 +114,7 @@ a.post span.date{
 
 div.single{
     background-color: white;
+    padding: 1rem;
 }
 
 div.single div.title{
@@ -125,15 +126,41 @@ div.single div.title{
 
 div.single div.tag{
     text-align: right;
-    margin: 1rem 0;
+}
+a.toc{
+    font-size:1.2rem;
+    line-height: 1.4rem;
 }
 
-div.single div.tag a{
-    color: #777;
+a.toc-h1{
+    margin-left: 0rem;
 }
+
+a.toc-h2{
+    margin-left: 2rem;
+}
+
+a.toc-h1::before{
+    font-size: 0.6rem;
+    content: "■ "
+}
+
+a.toc-h2::before{
+    font-size: 0.6rem;
+    content: "● "
+}
+
 a.nodeco{
     text-decoration: none;
     color:rgb(0, 0, 0);
+}
+
+a.nodeco:hover{
+    color:#11a;
+}
+
+a.gray{
+    color: #777;
 }
 
 .footer{
@@ -167,24 +194,24 @@ a.nodeco{
                 <a class = "nodeco" href="tag1.html">
                     <span class="name">
                         프로그래밍</span>
-                    <span class="count">(3)</span>
+                    <span class="count">(4)</span>
                 </a>
             
                 <a class = "nodeco" href="tag11.html">
                     <span class="name">
                         태그1</span>
+                    <span class="count">(3)</span>
+                </a>
+            
+                <a class = "nodeco" href="tag12.html">
+                    <span class="name">
+                        이 것은 태그</span>
                     <span class="count">(2)</span>
                 </a>
             
                 <a class = "nodeco" href="tag8.html">
                     <span class="name">
                         태그2</span>
-                    <span class="count">(1)</span>
-                </a>
-            
-                <a class = "nodeco" href="tag4.html">
-                    <span class="name">
-                        크게</span>
                     <span class="count">(1)</span>
                 </a>
             
@@ -206,9 +233,9 @@ a.nodeco{
                     <span class="count">(1)</span>
                 </a>
             
-                <a class = "nodeco" href="tag3.html">
+                <a class = "nodeco" href="tag4.html">
                     <span class="name">
-                        아주</span>
+                        크게</span>
                     <span class="count">(1)</span>
                 </a>
             
@@ -224,21 +251,21 @@ a.nodeco{
                     <span class="count">(1)</span>
                 </a>
             
+                <a class = "nodeco" href="tag3.html">
+                    <span class="name">
+                        아주</span>
+                    <span class="count">(1)</span>
+                </a>
+            
                 <a class = "nodeco" href="tag2.html">
                     <span class="name">
                         굉장히</span>
                     <span class="count">(1)</span>
                 </a>
             
-                <a class = "nodeco" href="tag12.html">
-                    <span class="name">
-                        태그 2</span>
-                    <span class="count">(1)</span>
-                </a>
-            
                 <a class = "nodeco" href="tag13.html">
                     <span class="name">
-                        이 것은 태그</span>
+                        태그 2</span>
                     <span class="count">(1)</span>
                 </a>
             
@@ -256,6 +283,14 @@ a.nodeco{
 
     <p class="filter">{ 태그1 } 태그가 들어간 글</p>
 
+
+    
+        
+    <a class="nodeco post" href="heading-test.html">
+        <span class="title">목차 테스트용 글입니다.</span>
+        <span class="date">2020-12-7</span>
+    </a>
+    </br>
 
     
         
