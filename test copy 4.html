@@ -19,9 +19,9 @@
     <meta property="og:image" content="https://wirekang.github.io/logo.png">
     <meta property="og:local" content="ko_KR">
     
-        <title>wirekang 블로그</title>
-        <meta property="og:title" content="wirekang 블로그">
-        <meta property="og:url" content="https://wirekang.github.io">
+        <title>코드 하이라이팅 기능 테스트</title>
+        <meta property="og:title" content="코드 하이라이팅 기능 테스트">
+        <meta property="og:url" content="https://wirekang.github.io/test copy 4.html">
     
 
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -123,8 +123,8 @@ div#header {
 div#header div#title{
     font-family: 'D2Coding';
     
-    font-size: 35px;
-    padding: 8px 0;
+    font-size: 24px;
+    align-self:flex-start;
     
 }
 
@@ -424,139 +424,216 @@ div#footer{
     </div>
     <a class="nodeco c-3" id="mode">밝게</a>
     
-    <div id="description" class="c-2">
-        블로그입니다.
-    </div>
-    <a id="link-github" class="nodeco c-2" href="https://github.com/wirekang">GitHub</a>
-
-        <div id="tags">
-            
-                <a class = "nodeco boc-3" href="tag1.html">
-                    <span class="name">
-                        개발</span>
-                    <span class="count">(39)</span>
-                </a>
-            
-                <a class = "nodeco boc-3" href="tag2.html">
-                    <span class="name">
-                        테스트</span>
-                    <span class="count">(39)</span>
-                </a>
-            
-                <a class = "nodeco boc-3" href="tag10.html">
-                    <span class="name">
-                        ㅁㅈㄷㅂ</span>
-                    <span class="count">(1)</span>
-                </a>
-            
-                <a class = "nodeco boc-3" href="tag4.html">
-                    <span class="name">
-                        태그2</span>
-                    <span class="count">(1)</span>
-                </a>
-            
-                <a class = "nodeco boc-3" href="tag5.html">
-                    <span class="name">
-                        태그3</span>
-                    <span class="count">(1)</span>
-                </a>
-            
-                <a class = "nodeco boc-3" href="tag6.html">
-                    <span class="name">
-                        태그5</span>
-                    <span class="count">(1)</span>
-                </a>
-            
-                <a class = "nodeco boc-3" href="tag7.html">
-                    <span class="name">
-                        ㅁㄴㅇㅇㄹ</span>
-                    <span class="count">(1)</span>
-                </a>
-            
-                <a class = "nodeco boc-3" href="tag8.html">
-                    <span class="name">
-                        ㅂㅈㄷㄱ</span>
-                    <span class="count">(1)</span>
-                </a>
-            
-                <a class = "nodeco boc-3" href="tag9.html">
-                    <span class="name">
-                        ㅁㄴㄴㄹ</span>
-                    <span class="count">(1)</span>
-                </a>
-            
-                <a class = "nodeco boc-3" href="tag3.html">
-                    <span class="name">
-                        태그1</span>
-                    <span class="count">(1)</span>
-                </a>
-            
-                <a class = "nodeco boc-3" href="tag11.html">
-                    <span class="name">
-                        ㅁㄻㄴㄹ</span>
-                    <span class="count">(1)</span>
-                </a>
-            
-                <a class = "nodeco boc-3" href="tag12.html">
-                    <span class="name">
-                        ㅂㄷㄱ</span>
-                    <span class="count">(1)</span>
-                </a>
-            
-                <a class = "nodeco boc-3" href="tag13.html">
-                    <span class="name">
-                        ㅇㄹㅈ</span>
-                    <span class="count">(1)</span>
-                </a>
-            
-                <a class = "nodeco boc-3" href="tag14.html">
-                    <span class="name">
-                        ㅋㅋㅋ</span>
-                    <span class="count">(1)</span>
-                </a>
-            
-                <a class = "nodeco boc-3" href="tag15.html">
-                    <span class="name">
-                        ㅌㅌㅌㅌ</span>
-                    <span class="count">(1)</span>
-                </a>
-            
-                <a class = "nodeco boc-3" href="tag16.html">
-                    <span class="name">
-                        ㅈㅈ ㅈㅈ</span>
-                    <span class="count">(1)</span>
-                </a>
-            
-                <a class = "nodeco boc-3" href="tag17.html">
-                    <span class="name">
-                        was</span>
-                    <span class="count">(1)</span>
-                </a>
-            
-                <a class = "nodeco boc-3" href="tag18.html">
-                    <span class="name">
-                        ewr</span>
-                    <span class="count">(1)</span>
-                </a>
-            
-                <a class = "nodeco boc-3" href="tag19.html">
-                    <span class="name">
-                        axsa wqwe</span>
-                    <span class="count">(1)</span>
-                </a>
-            
-        </div>
-    
 </div>
 
 <div id="content">
 
     
-<div id ="post-list">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/a11y-dark.min.css" integrity="sha512-1rzCaYWsg3l6uKvGbUT6rAZFOcVn0zeXAFlZudsnj8k2xcrU5asL8jfJUEijV9GPYMh0GnPToeCTJj6RXQnA8g==" crossorigin="anonymous" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<script>
+  const aid = "test copy 4";
+  const addr="comment.wirekang.com";
+  const slash='/';
+  const httpRequest = new XMLHttpRequest();
+  let commentDiv;
+  let commentName,commentPass,commentText;
+  let alertDiv;
+  
+  function initComment(){
+    commentDiv=document.getElementById('comment-list');
+    commentName=document.getElementById('comment-name')
+    commentName.value=window.localStorage.getItem('name')
+    commentPass=document.getElementById('comment-pass')
+    commentPass.value=window.localStorage.getItem('pass')
+    commentText=document.getElementById('comment-text')
+    alertDiv = document.getElementById('alert')
+    document.getElementById('comment-submit').addEventListener(
+      'click',(e)=>{
+        onSubmit();
+      }
+    )
+    httpRequest.onreadystatechange = function (e){
+      if(httpRequest.readyState === XMLHttpRequest.DONE){
+        const msg = JSON.parse(httpRequest.responseText).msg;
+        if(msg){
+          alert(msg)
+          selectComment();
+          return;
+        }
+        if( httpRequest.status===200){
+          let arr = JSON.parse(httpRequest.responseText);
+          arr = arr.sort((a,b)=>{
+            return a.id - b.id;
+          })
+          commentDiv.innerHTML="";
+          arr.forEach(cmt=>{
+            const date = new Date(cmt.time);
+            const time=
+            `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()} ${date.getHours()}:${date.getMinutes()}`;
+            commentDiv.innerHTML+=
+            `<div class='comment-block boc-2'>
+            <div class='comment-l1'>
+            <span class='comment-name'>${cmt.name}</span>
+            <span class='comment-time'>${time}</span>
+            </div> <div class='comment-l2'>
+            <span class='comment-text'>${cmt.text}</span>
+            <a class="comment-delete nodeco c-3" onclick='onDelete(${cmt.id})'>삭제</a>
+            </div></div>`;
+          })
+        }
+      }
+    }
+  }
 
-    <p class="filter c-2"><b> 테스트 </b> 태그가 포함된 글</p>
+  function selectComment(){
+    const url=`https:${slash}/${addr}/api/comments?aid=${aid}`
+    httpRequest.open('GET',url);
+    httpRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+    httpRequest.send();
+  }
 
+  function insertComment(){
+    const url=`https:${slash}/${addr}/api/comments`
+    httpRequest.open('POST',url);
+    httpRequest.setRequestHeader("Content-Type","application/json");
+      const b = JSON.stringify({
+      aid,
+      name: commentName.value,
+      passwd: commentPass.value,
+      text:commentText.value,
+    })
+    console.log(b);
+    httpRequest.send(b);
+    window.localStorage['name']=commentName.value;
+    window.localStorage['pass']=commentPass.value;
+  }
 
+  function deleteComment(id,pass){
+    const url=`https:/${slash}/${addr}/api/comments?id=${id}&passwd=${pass}`
+    httpRequest.open('DELETE',url);
+    httpRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+    httpRequest.send();
+  }
+
+  function onDelete(id){
+    let pass=prompt("댓글 작성 시 사용했던 비밀번호를 입력하세요.",localStorage['pass']);
+    deleteComment(id,pass);
+  }
+
+  function onSubmit(){
+    insertComment();
+    commentText.value='';
+  }
+
+  let timeouts = [];
+
+  function alert(str){
+    alertDiv.innerHTML=str;
+    timeouts.forEach((v)=>{
+      clearTimeout(v)
+    })
+    timeouts = []
+    timeouts.push(setTimeout(()=>{
+      alertDiv.innerHTML=''
+    },3000))
+  }
+
+  function doTOC(){
+    const post = document.getElementById("post")
+    const toc=document.getElementById("toc")
+    const headings = Array.from(post.getElementsByTagName("*")).filter( 
+      e=> (e.tagName=="H1" || e.tagName=="H2")
+    )
+    
+    let tocInner="<h1 class='toc'>목차</h1>"
+    let index = 0
+    headings.forEach(h => {
+      h.id=index++
+      tocInner+=`<a class="toc toc-${h.tagName.toLowerCase()} nodeco" href="#${h.id}">${h.innerHTML}</a></br>`
+      h.innerHTML=`<a class="nodeco" href="#toc">${h.innerHTML}</a>`
+    })
+    console.log(headings)
+    console.log(tocInner)
+    toc.innerHTML = tocInner
+  }
+
+  hljs.initHighlightingOnLoad();
+  document.addEventListener("DOMContentLoaded",()=>{
+    doTOC();
+    initComment();
+    selectComment();
+  })
+</script>
+<div id="single">
+    <div id="title">
+        <a class="nodeco" href="test%20copy%204.html">코드 하이라이팅 기능 테스트</a>
+    </div>
+    <div id="under">
+        
+            <a class="tag nodeco c-3" href ="tag1.html">#개발</a>
+        
+            <a class="tag nodeco c-3" href ="tag2.html">#테스트</a>
+        
+        <p id="date" class="c-3">2020-12-14</p>
+    </div>
+    <div id="post">
+        <div id="toc"></div>
+        <h1>Java</h1>
+
+<pre><code class="language-java">package main
+
+class Main{
+    public static void main(String[] args){
+        System.out.println(&quot;asdf&quot;);
+    }
+}
+</code></pre>
+
+<h1>Go</h1>
+
+<pre><code class="language-go">func main(){
+    fmt.Prinln(&quot;asdf&quot;)
+    os.Exit(0)
+}
+</code></pre>
+
+<h1>Javascript</h1>
+
+<pre><code class="language-javascript">function init(){
+  const td = document.getElementById('td');
+  td.innerHTML='asdf';
+}
+
+document.addEventListener(&quot;DOMContentLoaded&quot;,()=&gt;{
+  init();
+});
+</code></pre>
+
+    </div>
+    <div id="comment">
+      <p class="filter c-2">댓글</p>
+      <div id="comment-list"></div>
+      <div id="comment-add">
+        <div id="comment-add-l1">
+          <input type='text' id='comment-name' maxlength="20" placeholder='익명'
+            class="boc-2 bac-3"/>
+          <input type='password' id='comment-pass' maxlength="20" 
+          placeholder="비밀번호" class="boc-2 bac-3"/>
+        </div>
+        <div id="comment-add-l2">
+          <textarea id='comment-text' maxlength="400" class="bac-3"></textarea>
+          <input type='button' id='comment-submit' value='등록' class="boc-2 bac-3"/>
+        </div>
+        <div id="commnet-add-l3">
+          <div id="alert">
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div id="related">
+    <p class="filter c-2">관련된 글</p>
     
         
     <div class="post-block boc-3" onclick="location.href='test copy 10.html'">
@@ -776,13 +853,6 @@ div#footer{
 
     
         
-    <div class="post-block boc-3" onclick="location.href='test copy 4.html'">
-        <span class="title">코드 하이라이팅 기능 테스트</span>
-        <span class="date">2020-12-14</span>
-    </div>
-
-    
-        
     <div class="post-block boc-3" onclick="location.href='test copy 5.html'">
         <span class="title">코드 하이라이팅 기능 테스트</span>
         <span class="date">2020-12-14</span>
@@ -831,8 +901,6 @@ div#footer{
     </div>
 
     
-</div>
-<div class="hidden">
 </div>
 
     <div id="footer">
