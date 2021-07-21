@@ -2,62 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://npm.install.express/</loc>
-    <lastmod>2021-07-20T20:17:26+09:00</lastmod>
-  </url><url>
-    <loc>https://npm.install.express/posts/</loc>
-    <lastmod>2021-07-20T20:17:26+09:00</lastmod>
-  </url><url>
-    <loc>https://npm.install.express/posts/third/</loc>
-    <lastmod>2021-07-20T20:17:26+09:00</lastmod>
-  </url><url>
-    <loc>https://npm.install.express/posts/four/</loc>
-    <lastmod>2021-07-20T20:17:26+09:00</lastmod>
-  </url><url>
-    <loc>https://npm.install.express/posts/second/</loc>
-    <lastmod>2021-07-20T20:17:05+09:00</lastmod>
-  </url><url>
-    <loc>https://npm.install.express/posts/first-copy-2/</loc>
-    <lastmod>2021-07-20T17:25:34+09:00</lastmod>
-  </url><url>
-    <loc>https://npm.install.express/posts/first-copy-3/</loc>
-    <lastmod>2021-07-20T17:25:34+09:00</lastmod>
-  </url><url>
-    <loc>https://npm.install.express/posts/first-copy-4/</loc>
-    <lastmod>2021-07-20T17:25:34+09:00</lastmod>
-  </url><url>
-    <loc>https://npm.install.express/posts/first-copy-5/</loc>
-    <lastmod>2021-07-20T17:25:34+09:00</lastmod>
-  </url><url>
-    <loc>https://npm.install.express/posts/first-copy-6/</loc>
-    <lastmod>2021-07-20T17:25:34+09:00</lastmod>
-  </url><url>
-    <loc>https://npm.install.express/posts/first-copy-7/</loc>
-    <lastmod>2021-07-20T17:25:34+09:00</lastmod>
-  </url><url>
-    <loc>https://npm.install.express/posts/first-copy/</loc>
-    <lastmod>2021-07-20T17:25:34+09:00</lastmod>
-  </url><url>
-    <loc>https://npm.install.express/posts/first/</loc>
-    <lastmod>2021-07-20T17:25:34+09:00</lastmod>
-  </url><url>
-    <loc>https://npm.install.express/tags/tag1/</loc>
-    <lastmod>2021-07-20T17:25:34+09:00</lastmod>
-  </url><url>
-    <loc>https://npm.install.express/tags/tag2/</loc>
-    <lastmod>2021-07-20T17:25:34+09:00</lastmod>
-  </url><url>
-    <loc>https://npm.install.express/tags/tag4/</loc>
-    <lastmod>2021-07-20T17:25:34+09:00</lastmod>
-  </url><url>
-    <loc>https://npm.install.express/tags/</loc>
-    <lastmod>2021-07-20T17:25:34+09:00</lastmod>
-  </url><url>
-    <loc>https://npm.install.express/tags/%EC%A2%80-%EA%B8%B4-%EC%84%B8-%EB%B2%88-%EC%A7%B8-%ED%83%9C-%EA%B7%B8-%EC%9E%85-%EB%8B%88-%EB%8B%A4/</loc>
-    <lastmod>2021-07-20T17:25:34+09:00</lastmod>
-  </url><url>
     <loc>https://npm.install.express/about/</loc>
   </url><url>
     <loc>https://npm.install.express/categories/</loc>
+  </url><url>
+    <loc>https://npm.install.express/</loc>
+  </url><url>
+    <loc>https://npm.install.express/tags/</loc>
   </url>
 </urlset>
